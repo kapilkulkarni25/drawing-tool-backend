@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 const isDev = app.settings.env === 'development'
-const URL = isDev ? 'http://localhost:3000' : 'https://sketchbook-sigma.vercel.app'
+const URL = isDev ? 'http://localhost:5000' : 'drawing-tool-5onfyisu8-kapils-projects-50cafee3.vercel.app'
 app.use(cors({ origin: URL }))
 const httpServer = createServer(app);
 const io = new Server(httpServer, { cors: URL });
